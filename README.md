@@ -124,15 +124,3 @@ sekadar membungkus interpreter (seperti PyInstaller). Hasilnya:
 - Source code Python tidak ikut terdistribusi mentah-mentah dalam bentuk `.py`
 - Tetap memakai library sistem (`python3-gi`, WebKit2GTK) yang sudah
   teroptimasi oleh distro, bukan membundel ulang versi sendiri yang lebih berat
-
-## Catatan Kompatibilitas
-
-- Zorin OS 17 (berbasis Ubuntu 22.04) → paket WebKit biasanya bernama
-  `gir1.2-webkit2-4.0`. Distro yang lebih baru memakai `gir1.2-webkit2-4.1`.
-  `build.sh` dan `build-deb.sh` sudah menangani keduanya.
-- Dites logikanya di lingkungan Python 3.12 dengan modul `markdown`,
-  `pygments`, `GLib` — semuanya berjalan sesuai ekspektasi. Bagian
-  GTK/WebKit tidak bisa diuji langsung di sandbox pembuatan ini karena
-  keterbatasan lingkungan (tanpa typelib GTK & tanpa akses internet), jadi
-  mohon dites langsung setelah compile di mesin kamu. Kalau ada error,
-  kirimkan pesan errornya, saya bantu perbaiki.
