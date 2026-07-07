@@ -1,0 +1,8 @@
+# Dependency Python untuk NRM.
+# Catatan: PyGObject (gi) dan WebKit2GTK sebaiknya dipasang lewat apt
+# (python3-gi, gir1.2-gtk-3.0, gir1.2-webkit2-4.1/4.0), BUKAN lewat pip,
+# karena butuh binding native ke library sistem GTK.
+#
+# Paket di bawah ini aman dipasang lewat apt atau pip:
+Markdown>=3.5
+Pygments>=2.16

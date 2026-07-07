@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=NRM
+GenericName=Nirvana Reader MD
+Comment=Pembaca file Markdown yang ringan
+Comment[id]=Pembaca file Markdown yang ringan
+Exec=nrm %f
+TryExec=nrm
+Icon=nrm
+Terminal=false
+Categories=Utility;TextEditor;Office;
+MimeType=text/markdown;text/x-markdown;
+Keywords=markdown;md;reader;viewer;
+StartupNotify=true
